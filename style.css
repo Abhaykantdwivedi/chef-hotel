@@ -1,0 +1,445 @@
+/* ===== BASIC RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf8f3;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.70),
+            rgba(0, 0, 0, 0.30)
+        ),
+
+        url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+
+/* ===== NAVBAR ===== */
+
+nav {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #d9a441;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #d9a441;
+}
+
+
+/* ===== HERO ===== */
+
+.hero {
+    max-width: 850px;
+
+    padding: 180px 7% 80px;
+}
+
+.tagline {
+    color: #e7bc67;
+
+    letter-spacing: 3px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 80px;
+
+    line-height: 1.05;
+
+    margin: 20px 0;
+}
+
+.hero > p:not(.tagline) {
+    max-width: 600px;
+
+    font-size: 19px;
+
+    color: #eeeeee;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===== BUTTON ===== */
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: #d9a441;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 3px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f0c568;
+}
+
+.btn.outline {
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid white;
+
+    margin-left: 8px;
+}
+
+
+/* ===== GENERAL SECTION ===== */
+
+section {
+    padding: 85px 7%;
+}
+
+
+/* ===== ABOUT ===== */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+.small-title,
+.section-title p {
+    color: #b28127;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+.about-content h2 {
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin: 12px 0 20px;
+}
+
+.about-content p {
+    color: #666;
+
+    margin-bottom: 18px;
+}
+
+
+/* ===== SECTION TITLE ===== */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+
+    margin-top: 8px;
+}
+
+
+/* ===== ROOMS ===== */
+
+.room-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.room-card {
+    background: white;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.room-card img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.room-content {
+    padding: 22px;
+}
+
+.room-content h3 {
+    font-size: 23px;
+
+    margin-bottom: 8px;
+}
+
+.room-content p {
+    color: #666;
+}
+
+.room-content h4 {
+    color: #b28127;
+
+    margin-top: 12px;
+
+    font-size: 17px;
+}
+
+
+/* ===== RESTAURANT ===== */
+
+.restaurant {
+    background-color: #211d18;
+
+    color: white;
+}
+
+.restaurant .section-title h2 {
+    color: white;
+}
+
+.menu-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px 70px;
+}
+
+.dish {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #4a443d;
+}
+
+.dish h3 {
+    font-size: 18px;
+}
+
+.dish p {
+    color: #bbb;
+
+    font-size: 14px;
+}
+
+.dish span {
+    color: #e7bc67;
+
+    font-weight: bold;
+}
+
+
+/* ===== CONTACT ===== */
+
+.contact > .section-title {
+    margin-bottom: 45px;
+}
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+.contact-info h2 {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+
+/* ===== FORM ===== */
+
+form {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 7px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+
+    resize: vertical;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #171411;
+
+    color: #aaa;
+
+    text-align: center;
+
+    padding: 28px;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 800px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 150px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .room-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+}
